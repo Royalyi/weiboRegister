@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*样式的初始化*/
+body,div,p,h1,h2,h3,h4,form,ul,li,dl,dt,dd,ol,img,a,apan,em,i,strong,b,input,label{ margin:0px; padding: 0px;}/*margin 很重要，应该类似整体居中*/
+li{ list-style: none;}
+em,l{ font-style:normal;}
+a{ text-decoration:none; color:#247eed;}
+a:hover{ color:#ffa00a;}
+body{ font-size:12px; color:#000; font-family:'宋体'; background: url(../images/images/body_bg.png) repeat-x 0px 6px #bce3f7;}/*横向平铺,平铺过程中该图片横向不平移，纵向全部平移6*//*logo part*/
+.top{
+	width:100%;
+	height:184px;/*content the red part 190-6*/
+	padding-top:6px;/*内边距*/
+	background:url(../images/images/line_bg.png) repeat-x 0px top;/*水平方向居中 垂直方向在top*/
+	}
+.top h1{width:900px; height:auto ; margin:0px auto;}/*logo 居中*/
+.top img{display:block; width:643px; height:184px; margin-left:178px;}/*行级元素变成块，加上盒子布局*/
+/*main主体部分*/
+.main {
+	width:900px;
+	height:535px;
+	background:url(../images/images/content_bg_19.jpg) no-repeat;
+	margin:0px auto;
+ 	
+}
+.main_top{
+	position:relative;/*i标签以main——top的位置进行参照*/
+	width:860px;
+	height:61px;
+	padding:29px 0px 0px 40px;/*上中下左*/
+}
+/*ul无序列表 高度*/
+/*默认两个li有浮动，需要清浮动*/
+.main_top ul{
+	overflow:hidden;
+}
+.main_top strong{
+	position:absolute;
+	width:43px;
+	height:33px;
+	text-align:center;
+	line-height:33px;
+	font-size:16px;
+	color:#838282;
+	top:29px;
+	left:135px;
+}
+/*ul中li*/
+.main_top li{
+	float:left;
+	width:96px;
+	height:33px;
+	margin-right:43px;
+}
+/*设置h3字体相关*/
+.main_top li h3{
+	font-weight:400;
+	width:100%;
+	height:30px;
+	font-size:24px;
+	
+
+}
+/*设置字体颜色*/
+.main_top li h3 a{
+	color:#3f3f3f;/*a标签默认颜色*/
+}
+.h3_cur h3{ border-bottom:#ffa00a 3px solid;}
+.main_top li h3 a:hover{color:#ffa00a;
+}
+.main_Mleft{
+	float:left;
+	width:450px;
+	height:auto;
+	padding-top:9px;/*左盒子上边距*/
+}
+/*设置邮箱，密码，昵称的排版*/
+.main_L_input{
+	width:380px;
+	height:28px;
+	padding:14px 0px 11px 0px;/*上中下左*/
+}
+/*将input框中的文字重新用label浮动然后设置文字右对齐*/
+.main_L_input label{
+	float:left;
+	width:174px;
+	height:28px;
+	line-height:28px;/*本行开始都是对label当中字的相关设置*/
+	text-align:right;
+	color:#000;
+	font-size:14px;
+}
+.main_L_input label i ,.main_key label i {
+	color:#ff0000;
+	padding-right:2px;
+}
+/*label and input is the same so keep float same*/
+.main_L_input input{
+	float:right;
+	width:194px;
+	height:26px;
+	padding:0px 0px 0px 4px;
+	line-height:28px;/*设置字居中*/
+	border:#cac8c8 1px solid;/*以上设置文本框大小及框的颜色以及字的颜色*/
+} 
+.main_Mta{
+	color:#cac8c8;
+	}
+.main_email_icon{
+	background:url(../images/images/email_icon_22.png) no-repeat 97px 0px;
+}
+.main_L_reg{
+	width:200px;
+	height:14px;
+	padding-left:180px
+}
+.main_key{
+	width:380px;
+	height:40px;
+	margin-top:7px;
+}
+.main_key label{
+	float:left;
+	width:174px;
+	height:40px;
+	line-height:40px;
+	text-align:right;
+	font-size:14px;
+	
+	}
+.main_key input{
+	float:left;
+	width:69px;/*73-4*/
+	height:26px;
+	border:#cac8c8 1px solid;
+	padding:0px 0px 0px 4px;/*input中输入内容相对于内容框的距离*/
+	margin:8px 0px 0px 6px;/*input框和label框有相对距离*/
+}
+.main_key span{
+	float:right;
+	width:100px;
+	height:40px;
+	}
+.main_key img{
+	float:left;
+	width:68px;
+	height:38px;
+ }
+.main_key a{
+	float:right;
+	width:13px;
+	height:16px;
+	margin-top:12px;
+	background:url(../images/images/reset.jpg) no-repeat;
+	text-indent:-99em;/*隐藏刷新两个字*/
+	overflow:hidden;
+}
+.main_btn{
+	display:block;/*?*/
+	width:194px;
+	height:42px;
+	font-size:18px;/*立即注册的字体大小*/
+	text-align:center;/*字居中*/
+	line-height:42px;/*字行高*/
+	color:#FFF;
+	margin:35px 0px 0px 180px/*btn相对距离*/;
+	background:url(../images/images/btn_19.jpg) no-repeat;
+	border: 0 none;
+	cursor:pointer;
+	padding-top:6px;
+	}
+.main_text{
+	width:245px;
+	height:48px;
+	margin-top:11px;
+	line-height:18px;
+	padding-left:180px;
+}
+
+
+.main_Mright{
+	float:right;
+	width:240px;/*271-31*/
+	height:370px;
+	padding-left:31px;/*框内间距及向左移动31px*/
+	background:url(../images/images/right_liner_13.jpg) no-repeat;
+}/*设置为无平铺，后面的数字为该方框的起始偏移量，为零可省略不写*/
+.main_reg{
+	width:208px;
+	height:32px;
+	font-size:14px;
+	line-height:32px;
+	border-bottom:dotted;
+	border-bottom-color:#cccccc;
+	padding-left:2px;
+	}
+.main_M_dl{
+	width:100%;
+	height:auto; 
+	font-size:14px;
+}
+.main_M_dl dt{
+	width:100%;
+	height:27px;/*37-10*/
+	padding-top:10px;
+}
+.main_M_dl dd{
+	width:100%;
+	height:22px;
+	line-height:22px;
+	color:#948c8c;/*灰色*/
+}
+.main_M_dl dd.main_M_ddt{
+	font-weight:bold;
+	color:#ffa00a;/*黄色*/
+}
+.bottom{
+	width:900px;
+	height:45px;
+	margin:0px auto;
+	color:#8a95a3;
+	line-height:40px;
+}
+.bottom_left{
+	float:left;
+	width:429px;
+	padding-left:31px;
+	height:40px;
+	background:url(../images/images/logo_icon_70.jpg) no-repeat 2px 10px;
+	}
+.bottom_right{
+	float:right;
+	width:270px;
+	height:40px;
+	color:#8a95a3;
+	font-family:Arial;
+}
